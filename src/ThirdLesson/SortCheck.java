@@ -14,10 +14,13 @@ public class SortCheck {
             Array[i] = Integer.parseInt(bufferedReader.readLine());
         }
         Arrays.sort(Array);
-        String buf = "";
+        boolean flag = false;
         for (int i = 0; i < n; i++) {
-            if (Array[i] == 1 || Array[i] == 3) buf += "" + Array[i];
+            if (Array[i] == 1 || Array[i] == 3) {
+                flag = true;
+                break;
+            }
         }
-        System.out.println(buf.contains("13"));
+        System.out.println(flag);
    }
 }

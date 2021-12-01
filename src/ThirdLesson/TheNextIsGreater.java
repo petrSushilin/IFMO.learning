@@ -1,14 +1,14 @@
 package ThirdLesson;
 import java.util.*;
 
-public class TheNextIsBigger {
+public class TheNextIsGreater {
     public static boolean checkRow(int a, int b, int c){
-        boolean flag;
+        boolean flag = false;
         if (b > a) {
             if (c > b) {
                 flag = true;
-            } else flag = false;
-        } else flag = false;
+            }
+        }
         return flag;
     }
     public static void main(String[] args) {
