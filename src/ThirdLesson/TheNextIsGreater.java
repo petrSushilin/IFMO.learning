@@ -1,5 +1,4 @@
 package ThirdLesson;
-import java.util.*;
 
 public class TheNextIsGreater {
     public static boolean checkRow(int a, int b, int c){

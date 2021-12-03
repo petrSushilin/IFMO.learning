@@ -51,8 +51,8 @@ public class Calculator {
         } else {
             firstNumberLong = Long.parseLong(bufFirstNumber);
             secondNumberLong = Long.parseLong(bufSecondNumber);
-            if ((firstNumberLong >= (-2147483648) && firstNumberLong < 2147483647) ||               // проверяем выход за пределы типа int
-                    (secondNumberLong >= (-2147483648) && secondNumberLong < 2147483647)) { // проверяем выход за пределы типа int
+            if ((firstNumberLong >= Integer.MIN_VALUE && firstNumberLong < Integer.MAX_VALUE) ||               // проверяем выход за пределы типа int
+                    (secondNumberLong >= Integer.MIN_VALUE && secondNumberLong < Integer.MAX_VALUE)) { // проверяем выход за пределы типа int
                 firstNumberInt = (int) firstNumberLong;
                 secondNumberInt = (int) secondNumberLong;
                 System.out.println(calculator(firstNumberInt, secondNumberInt, operator));

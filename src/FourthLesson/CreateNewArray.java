@@ -6,13 +6,31 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 
 public class CreateNewArray {
-    public static void main(String[] args) throws IOException {
+    public static int[] createArray() throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("Введите длину массива: ");
         int n = Integer.parseInt(bufferedReader.readLine());
         int[] array = new int[n];
-        for (int i = 0; i < n; i++) {
+
+        fillArray(array);
+
+        return array;
+    }
+
+    public static int[] fillArray(int[] array) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.print("Введите следующее число: ");
             array[i] = Integer.parseInt(bufferedReader.readLine());
         }
+
+        return array;
+    }
+
+    public static void main(String[] args) throws IOException {
+        int[] array = createArray();
         System.out.println(Arrays.toString(array));
     }
 }
