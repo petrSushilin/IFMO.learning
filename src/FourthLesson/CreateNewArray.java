@@ -5,6 +5,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+/*
+2.	Напишите программу, которая считывает с клавиатуры длину массива
+ (например, пользователь вводит цифру 4), затем пользователь вводит 4 числа
+  и на новой строке выводится массив из 4 элементов.
+ */
+
 public class CreateNewArray {
     public static int[] createArray() throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));

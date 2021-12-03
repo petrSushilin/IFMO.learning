@@ -2,6 +2,9 @@ package FourthLesson;
 
 import java.util.Arrays;
 
+/*5.	Заполните массив случайным числами и отсортируйте его.
+Используйте сортировку слиянием.*/
+
 public class MergeSort {
 
     public static int[] mergeSort(int[] array) {

@@ -39,6 +39,10 @@ public class Phone {
         this.isCharged = isCharged;
     }
 
+    public Phone() {
+
+    }
+
     @Override
     public String toString() {
         return "Your phone is " +
