@@ -9,53 +9,38 @@ import java.io.InputStreamReader;
  */
 
 public class ThePalindrome {
+
+    // Проверка полиндрома
     public static boolean isPalindrome(String inputString) {
-        int mid = inputString.length() / 2;
-        String substring1 = "";
-        String substring2 = "";
+        String reflectedWord = wordConverter(inputString);
         boolean flag = true;
 
-        if (inputString.length() % 2 == 0) {
-            substring1 = inputString.substring(0, mid);
-            substring2 = inputString.substring(mid);
-
-            substring2 = wordConverter(substring2);
-            System.out.println(substring1 + " " + substring2);
-            for (int i = 0; i < mid; i++) {
-                if (substring1.charAt(i) != substring2.charAt(i)) {
-                   return !flag;
-                }
+        for (int i = 0; i < inputString.length(); ++i) {
+            if (inputString.charAt(i) != reflectedWord.charAt(i)) {
+                return !flag;
             }
         }
 
-        if (inputString.length() % 2 != 0) {
-            substring1 = inputString.substring(0, mid + 1);
-            substring2 = inputString.substring(mid);
-
-            substring2 = wordConverter(substring2);
-            for (int i = 0; i < mid; i++) {
-                if (substring1.charAt(i) != substring2.charAt(i)) {
-                    return !flag;
-                }
-            }
-        }
         return flag;
     }
 
-    public static String wordConverter(String secondPart) {
-        StringBuilder bufferString = new StringBuilder(secondPart);
-        secondPart = bufferString.reverse().toString();
-        return secondPart;
+    // Метод конвертации слова
+    public static String wordConverter(String commonWord) {
+        StringBuilder bufferString = new StringBuilder(commonWord);
+        String convertedWord = bufferString.reverse().toString();
+        return convertedWord;
     }
 
     public static String inputWord() throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("Введите, пожалуйста, слово: ");
         String inputString = bufferedReader.readLine();
         return inputString.trim();
     }
 
     public static void main(String[] args) throws IOException {
         String inputWord = inputWord();
-        System.out.println(isPalindrome(inputWord));
+        boolean isPalindrome = isPalindrome(inputWord);
+        System.out.println(isPalindrome ? "Это слово палиндром" : "Это слово не палиндром");
     }
 }

@@ -9,6 +9,8 @@ import java.io.InputStreamReader;
  */
 
 public class TheLongestWord {
+
+    // Поисковик самого длинного слова в массиве
     public static String theLongestWord(String[] arrayWords) {
         String longestWord = "";
         for (String i: arrayWords) {
@@ -19,12 +21,14 @@ public class TheLongestWord {
         return longestWord;
     }
 
+    // Метод создания массива слов из любого текста
     public static String[] createArrayOfWords(String inputString) {
         inputString = inputString.replaceAll("[^A-Za-zА-Яа-я 1-9]", "");
         String[] arrayWords = inputString.split(" ");
         return arrayWords;
     }
 
+    // Ввод текста
     public static String inputWordsScanner() throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         String inputString = bufferedReader.readLine();
