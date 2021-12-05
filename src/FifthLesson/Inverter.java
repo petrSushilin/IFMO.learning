@@ -4,6 +4,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/* 5.	Напишите метод, который инвертирует слова в строке.
+Предполагается, что в строке нет знаков препинания, и слова разделены пробелами.
+ */
+
 public class Inverter {
 
     public static String reverse(String[] array) {
