@@ -8,7 +8,8 @@ import java.io.InputStreamReader;
 
 public class CensoredWord {
     public static String censor(String primaryString) {
-        if (primaryString.length() == 0) System.out.println("Вы ввели пустую строку, повторите попытку.");
+        if (primaryString == null || primaryString.isEmpty())
+            System.out.println("Вы ввели пустую строку, повторите попытку.");
         String censoredString = primaryString.replaceAll("бяка", "[вырезано цензурой]");
         return censoredString;
     }

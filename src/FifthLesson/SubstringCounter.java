@@ -14,8 +14,8 @@ public class SubstringCounter {
 
         String[] bufferedArray = string.split(" ");
 
-        for (int i = 0; i < bufferedArray.length; ++i) {
-            if (bufferedArray[i].contains(substring)) ++counter;
+        for (int i = 0; i < bufferedArray.length; i++) {
+            if (bufferedArray[i].contains(substring)) counter++;
         }
 
         return counter;

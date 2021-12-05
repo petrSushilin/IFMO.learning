@@ -12,7 +12,7 @@ public class Inverter {
 
     public static String reverse(String[] array) {
         String reversed = "";
-        for(int i = 0; i < array.length; ++i) {
+        for(int i = 0; i < array.length; i++) {
             StringBuilder stringBuilder = new StringBuilder(array[i]);
             reversed += String.valueOf(stringBuilder.reverse()) + " ";
         }

@@ -13,15 +13,8 @@ public class ThePalindrome {
     // Проверка полиндрома
     public static boolean isPalindrome(String inputString) {
         String reflectedWord = wordConverter(inputString);
-        boolean flag = true;
 
-        for (int i = 0; i < inputString.length(); ++i) {
-            if (inputString.charAt(i) != reflectedWord.charAt(i)) {
-                return !flag;
-            }
-        }
-
-        return flag;
+        return inputString.equalsIgnoreCase(reflectedWord);
     }
 
     // Метод конвертации слова

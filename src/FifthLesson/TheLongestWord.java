@@ -13,9 +13,9 @@ public class TheLongestWord {
     // Поисковик самого длинного слова в массиве
     public static String theLongestWord(String[] arrayWords) {
         String longestWord = "";
-        for (String i: arrayWords) {
-            if (longestWord.length() < i.length()) {
-                longestWord = i;
+        for (String nextWord: arrayWords) {
+            if (longestWord.length() < nextWord.length()) {
+                longestWord = nextWord;
             }
         }
         return longestWord;
