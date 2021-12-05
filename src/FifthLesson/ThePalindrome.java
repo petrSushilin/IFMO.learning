@@ -34,7 +34,8 @@ public class ThePalindrome {
     public static String inputWord() throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Введите, пожалуйста, слово: ");
-        String inputString = bufferedReader.readLine();
+        String inputString = bufferedReader.readLine().toLowerCase();
+        bufferedReader.close();
         return inputString.trim();
     }
 
