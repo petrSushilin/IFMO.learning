@@ -1,6 +1,6 @@
-package SixthLesson;
+package SixthLesson.ClientAndEmployee;
 
-public class BankEmployee extends Person  {
+public class BankEmployee extends Person {
 
     String bankName;
 

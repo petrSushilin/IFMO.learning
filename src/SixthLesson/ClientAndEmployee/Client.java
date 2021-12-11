@@ -1,4 +1,4 @@
-package SixthLesson;
+package SixthLesson.ClientAndEmployee;
 
 public class Client extends Person {
 

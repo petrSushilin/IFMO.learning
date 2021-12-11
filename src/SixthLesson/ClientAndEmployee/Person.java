@@ -1,6 +1,6 @@
-package SixthLesson;
+package SixthLesson.ClientAndEmployee;
 
-public abstract class Person implements PersonInterface{
+public abstract class Person implements PersonInterface {
 
     private String name = null;
     private String surname = null;
