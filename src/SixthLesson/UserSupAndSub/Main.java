@@ -21,11 +21,9 @@ public class Main {
         userSubclass.name = Scanner.setName();
 
         userSubclass.age = Scanner.setAge();
-        System.out.println(userSubclass);
+//        System.out.println(userSubclass);
 
-        System.out.println(userSubclass.getName());
-
-        System.out.println(userSubclass.getAge());
+        System.out.println(userSubclass.getInfo());
     }
 
 }

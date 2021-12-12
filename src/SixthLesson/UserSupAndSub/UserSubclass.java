@@ -3,7 +3,7 @@ package SixthLesson.UserSupAndSub;
 
 public class UserSubclass extends UserSuperclass {
 
-    public String getName() {
+    public String getInfo() {
         return name;
     }
 }
