@@ -12,9 +12,6 @@ public class Superclass {
         this.anyInteger = anyInteger;
     }
 
-    public Superclass() {
-    }
-
     public static int scanner() throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 

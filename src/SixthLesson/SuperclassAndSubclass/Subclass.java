@@ -4,12 +4,8 @@ import java.io.IOException;
 
 public class Subclass extends Superclass {
 
-    public Subclass(int anyInteger) throws IOException {
+    public Subclass(int anyInteger) {
         super(anyInteger);
-    }
-
-    public Subclass() {
-        super();
     }
 
     public void printInteger() {
