@@ -5,6 +5,11 @@ public class UserSuperclass {
     String name;
     int age = 0;
 
+    public UserSuperclass(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
     public UserSuperclass() {
     }
 
