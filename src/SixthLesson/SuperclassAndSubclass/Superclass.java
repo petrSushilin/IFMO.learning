@@ -8,8 +8,7 @@ public class Superclass {
 
     static int anyInteger;
 
-    public Superclass(int anyInteger) {
-        this.anyInteger = anyInteger;
+    public Superclass() {
     }
 
     public static int scanner() throws IOException {
