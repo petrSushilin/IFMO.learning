@@ -1,4 +1,6 @@
-package SeventhLesson;
+package SeventhLesson.SecondTask;
+
+import SeventhLesson.MyScanner;
 
 import java.io.IOException;
 import java.util.ArrayList;

@@ -1,7 +1,12 @@
-package SeventhLesson;
+package SeventhLesson.SecondTask;
 
 import java.io.IOException;
 import java.util.*;
+
+/*
+Написать метод, который на входе получает коллекцию объектов,
+а возвращает коллекцию уже без дубликатов.
+ */
 
 public class UniqueCollection {
 
@@ -36,9 +41,9 @@ public class UniqueCollection {
         String type = null;
 
         if (userAnswer.equalsIgnoreCase("да")) {
-            type = "да";
+            type = "свой";
         } else if (userAnswer.equalsIgnoreCase("нет")) {
-            type = "нет";
+            type = "базовый";
         } else System.err.println("ERROR! Некорректный ввод!");
         return type;
     }
@@ -48,9 +53,11 @@ public class UniqueCollection {
 
         ArrayList<String> createdArrayList = new ArrayList<>();
 
-        if (type.equals("да")) {
+        if (type.equals("свой")) {
             createdArrayList = bufferedObject.giveMyArrayList();
-        } else createdArrayList = bufferedObject.giveBasicArrayList();
+        } else if (type.equals("базовый")) {
+            createdArrayList = bufferedObject.giveBasicArrayList();
+        }
 
         return createdArrayList;
     }
