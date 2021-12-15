@@ -12,6 +12,5 @@ public class Main {
     public static void main(String[] args) {
         Game.report(new InputScanner());
         Game.getPoint(new InputScanner());
-        //
     }
 }
