@@ -24,7 +24,7 @@ public class UniqueCollection {
     }
 
     public static Set<String> onlyUnique(List<String> inputList) {
-        Set returnSet = new HashSet();
+        Set<String> returnSet = new HashSet();
 
         for (String string : inputList) returnSet.add(string);
 

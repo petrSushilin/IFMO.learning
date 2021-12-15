@@ -9,6 +9,7 @@ package SeventhLesson.ThirdTask;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.Timer;
 
 import static SeventhLesson.ThirdTask.MethodArrayList.createArrayList;
 import static SeventhLesson.ThirdTask.MethodLinkedList.createLinkedList;
@@ -19,7 +20,6 @@ public class Main {
         ArrayList<Integer> arrayList = createArrayList(1000000);
 
         LinkedList<Integer> linkedList = createLinkedList(1000000);
-
 
         long timerArrayList = MyTimer.timerForArrayList(arrayList);
 

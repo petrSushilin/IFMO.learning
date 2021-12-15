@@ -1,11 +1,9 @@
 package SeventhLesson.SecondTask;
 
-import SeventhLesson.MyScanner;
-
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class ArrayListForSecondTask extends ArrayList<String> {
+public class ArrayListForSecondTask {
     private static ArrayList<String> arrayList = new ArrayList<>();
 
     public static ArrayList<String> giveBasicArrayList() {
@@ -24,7 +22,7 @@ public class ArrayListForSecondTask extends ArrayList<String> {
     }
 
     public static ArrayList<String> giveMyArrayList() throws IOException {
-        ArrayList<String> arrayList = MyScanner.createArrayList();
+        ArrayList<String> arrayList = CollectionScanner.createArrayList();
         return arrayList;
     }
 }
