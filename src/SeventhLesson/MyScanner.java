@@ -29,4 +29,24 @@ public class MyScanner {
 
         return createdArrayList;
     }
+
+    public static ArrayList<String> createPlayersList() throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        ArrayList<String> playersNames = new ArrayList<>();
+
+        System.out.print("Введите количество, не более 5 игроков: ");
+
+        int number = Integer.parseInt(bufferedReader.readLine());
+
+        for (int i = 0; i < number; i++) {
+            System.out.print("Введите имя игрока: ");
+
+            String name = bufferedReader.readLine();
+
+            playersNames.add(name);
+        }
+
+        return playersNames;
+    }
 }

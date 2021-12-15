@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Scanner {
+class Scanner {
     public static String setName() {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
