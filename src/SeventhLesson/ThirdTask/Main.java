@@ -9,6 +9,7 @@ package SeventhLesson.ThirdTask;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Timer;
 
 import static SeventhLesson.ThirdTask.MethodArrayList.createArrayList;
@@ -21,13 +22,14 @@ public class Main {
 
         LinkedList<Integer> linkedList = createLinkedList(1000000);
 
-        long timerArrayList = MyTimer.timerForArrayList(arrayList);
+        int stopwatch = (int) timerForList(arrayList);
 
-        System.out.println("Время на поиск 100000 значений в ArrayList " + timerArrayList  + " ms");
+        System.out.println("Время на поиск 100000 значений в ArrayList " + stopwatch  + " ms");
 
-        long timerLinkedList = MyTimer.timerForLinkedList(linkedList);
+        stopwatch = (int) timerForList(linkedList);
 
-        System.out.println("Время на поиск 100000 значений в LinkedList " + timerLinkedList  + " ms");
+        System.out.println("Время на поиск 100000 значений в LinkedList " + stopwatch  + " ms");
+
 
         /* Результат выполнения тестового прогона следующий:
         Время на поиск 100000 значений в ArrayList 21 ms
@@ -35,5 +37,22 @@ public class Main {
         Это связано с тем, что ArrayList владеет уникальными ссылками на каждый элемент списка,
         а LinkedList проходит, каждый раз при поиске элемента, весь список с начала.
          */
+    }
+
+    public static long timerForList(List<Integer> list) {
+        int buffered = 0;
+
+        int a = 0;
+        int b = 1000000;
+
+        long time = System.currentTimeMillis();
+
+        for (int i = 0; i < 100000; i++) {
+            buffered = list.get(a + (int) (Math.random() * b));
+        }
+
+        time = System.currentTimeMillis() - time;
+
+        return time;
     }
 }
