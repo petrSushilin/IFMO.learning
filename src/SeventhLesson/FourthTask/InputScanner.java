@@ -58,6 +58,6 @@ public class InputScanner {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return "";
+        return readLine();
     }
 }

@@ -33,13 +33,13 @@ public class Game {
     }
 
     public static void getPoint(InputScanner inputScanner) {
-        System.out.println("Введите имя игрока: ");
+        System.out.print("Введите имя игрока: ");
 
         String name = inputScanner.readLine();
 
-        for (Map.Entry<User, Integer> entry : playerMap.entrySet()) {
-            if (entry.getKey().getName().equals(name)) {
-                System.out.println(entry.getValue());
+        for (Map.Entry<User, Integer> pair : playerMap.entrySet()) {
+            if (pair.getKey().getName().equals(name)) {
+                System.out.println(pair.getValue());
             }
         }
     }
