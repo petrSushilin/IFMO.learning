@@ -12,8 +12,7 @@ public class Copier {
             List<String> strings = TextFormatScanner.process(inputFile);
 
             AppendList.process(strings, outputFilePath);
-        } catch (
-                IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

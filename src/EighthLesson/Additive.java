@@ -12,8 +12,7 @@ public class Additive {
         try (
                 BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile,true))) {
             writer.write(thisString + "\n");
-        } catch (
-                IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
