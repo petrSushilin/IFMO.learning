@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class ScanTextFormat {
+public class TextFormatScanner {
     public static List<String> process (File inputFile) throws IOException {
         List<String> listFromTxt = new ArrayList<>();
 
