@@ -59,6 +59,4 @@ public class MergeSort {
         int[] array = {58, 23, 76, 14, 24, 78, 19, 45, 85, 15};
         System.out.println(Arrays.toString(mergeSort(array)));
     }
-
-
 }
